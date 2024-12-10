@@ -1,0 +1,783 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
+<head>
+    <script src="WaveMRS/Menu/Menu.js" type="text/javascript"></script>
+    <style type="text/css">
+        .CloseButton {
+            margin-left: 100%;
+        }
+
+        .stop-scrolling {
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+    <title>
+	WaveMRS :: التحقق من شهادة المنشأ
+</title>
+
+    <script type="text/javascript">
+        function setControlFocus() {
+            vSetControlFocus('content');
+            window.scrollTo(0, 30);
+            showValidations();
+        }
+        //------------------------------------------
+        function imgWaveGRP_Click() {
+            __doPostBack("OnlineGoHome", "");
+            //window.location.href = "OnlineHomePage.aspx";
+        }
+
+        function SetSelectedValues() {
+
+        }
+        function IFrameClosePopup() {
+            CloseClientPopup(); return false;
+        }
+    </script>
+<link href="WaveMRS/App_Themes/WaveMRSThemeRTL/ComboBox.Vista.css" type="text/css" rel="stylesheet" />
+<link href="WaveMRS/App_Themes/WaveMRSThemeRTL/MasterStyle.css" type="text/css" rel="stylesheet" />
+<link href="WaveMRS/App_Themes/WaveMRSThemeRTL/Menu.css" type="text/css" rel="stylesheet" />
+<link href="WaveMRS/App_Themes/WaveMRSThemeRTL/WaveMRSStyle.css" type="text/css" rel="stylesheet" />
+<link href="/WaveMRS/WebResource.axd?d=l7ZCAPU7mBKMWVwIAEUaXEF4gKPjcusmvxQKYB7hUfQBhqe3zPN-hk0C8HZwHdx_pJ_p21KVB30dmFTaCdlV9iBRC2rhLLKNps4y7Iy86gpHJ6Cg_O3Fh1lB9UoBQdAVdaV8VQ2&amp;t=637918367888338876" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WaveMRS/WebResource.axd?d=2H9mYhsvmL1Un4OiLqscfrpNhtyPJSIRL8CisAW3hVFfTj4KXRbRlk6upAPhNQvyplo61_MyQ2JeP61H7-L3rSBpISfJU9q-Y6VzpkE2xg69DreWzSa7rK1IFC8qiopTeOo63ER9XGemK-XO3ZgymGFldH01&amp;t=637918367879660865" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
+<body onload="setControlFocus()">
+    <form method="post" action="./VertifyOriginCertificate.aspx?Lang=AR&amp;verficationcode=TWpBeU5FTXdOek15TUROVw2" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'IbtnDefaultButtonID')" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJLTY0NTMzNTI1D2QWAmYPZBYCAgEPZBYCAgMPZBYMAgUPZBYCAgcPDxYCHgdWaXNpYmxlaGRkAgYPZBYCZg9kFgJmDxYCHglpbm5lcmh0bWwFlg88VGFibGUgaWQ9IldhdmVNUlNNZW51IiBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjIiIHN0eWxlPSJXaWR0aDoyMDBweCI+PHRyPjx0ZCBpZD0nUGFyZW50MScgY2hpbGRpZD0nJyBzdHlsZT0iIiBjbGFzcz0nTWVudUxldmVsMVN0YW5kYXJkJz48YSBpZD0nMTAnICBocmVmPScjJyB0aXRsZT0i2YXYs9iq2K7Yr9mFINis2K/ZitivIiBvbmNsaWNrPSJfX0Nsb3NlTWVudUNoaWxkcygnJywwKTtfX01lbnVQb3N0QmFjaygnTWVudUNsaWNrJywnUGFnZXMvUmVnaXN0ZXJPbmxpbmVVc2Vycy5hc3B4P0xhbmc9QVInLCB0aGlzKSI+2YXYs9iq2K7Yr9mFINis2K/ZitivPC9hPjwvdGQ+PC90cj48dHI+PHRkIGlkPSdQYXJlbnQxX2NoaWxkcycgc3R5bGU9ImRpc3BsYXk6bm9uZTsiPjx0YWJsZSBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAiIHN0eWxlPSJXaWR0aDoxMDAlOyI+PC90YWJsZT48L3RkPjwvdHI+PHRyPjx0ZCBpZD0nUGFyZW50MicgY2hpbGRpZD0nJyBzdHlsZT0iIiBjbGFzcz0nTWVudUxldmVsMVN0YW5kYXJkJz48YSBpZD0nMjAnICBocmVmPScjJyB0aXRsZT0i2YbYs9mK2Kog2YPZhNmF2Kkg2KfZhNmF2LHZiNixIiBvbmNsaWNrPSJfX0Nsb3NlTWVudUNoaWxkcygnJywwKTtfX01lbnVQb3N0QmFjaygnTWVudUNsaWNrJywnUGFnZXMvRm9yZ290UGFzc3dvcmQuYXNweD9MYW5nPUFSJywgdGhpcykiPtmG2LPZitiqINmD2YTZhdipINin2YTZhdix2YjYsTwvYT48L3RkPjwvdHI+PHRyPjx0ZCBpZD0nUGFyZW50Ml9jaGlsZHMnIHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij48dGFibGUgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiBzdHlsZT0iV2lkdGg6MTAwJTsiPjwvdGFibGU+PC90ZD48L3RyPjx0cj48dGQgaWQ9J1BhcmVudDMnIGNoaWxkaWQ9Jycgc3R5bGU9IiIgY2xhc3M9J01lbnVMZXZlbDFTdGFuZGFyZCc+PGEgaWQ9JzMwJyAgaHJlZj0nIycgdGl0bGU9Itin2YTYqtit2YLZgiDZhdmGINi02YfYp9iv2Kkg2KfZhNi52LbZiNmK2KkiIG9uY2xpY2s9Il9fQ2xvc2VNZW51Q2hpbGRzKCcnLDApO19fTWVudVBvc3RCYWNrKCdNZW51Q2xpY2snLCdQYWdlcy9WZXJ0aWZ5TWVtYmVyc2hpcENlcnRpZmljYXRlLmFzcHg/TGFuZz1BUicsIHRoaXMpIj7Yp9mE2KrYrdmC2YIg2YXZhiDYtNmH2KfYr9ipINin2YTYudi22YjZitipPC9hPjwvdGQ+PC90cj48dHI+PHRkIGlkPSdQYXJlbnQzX2NoaWxkcycgc3R5bGU9ImRpc3BsYXk6bm9uZTsiPjx0YWJsZSBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAiIHN0eWxlPSJXaWR0aDoxMDAlOyI+PC90YWJsZT48L3RkPjwvdHI+PHRyPjx0ZCBpZD0nUGFyZW50NCcgY2hpbGRpZD0nJyBzdHlsZT0iIiBjbGFzcz0nTWVudUxldmVsMVN0YW5kYXJkJz48YSBpZD0nNDAnICBocmVmPScjJyB0aXRsZT0i2KfZhNiq2K3ZgtmCINmF2YYg2LTZh9in2K/YqSDYp9mE2YXZhti02KPYqSIgb25jbGljaz0iX19DbG9zZU1lbnVDaGlsZHMoJycsMCk7X19NZW51UG9zdEJhY2soJ01lbnVDbGljaycsJ1BhZ2VzL1ZlcnRpZnlPcmlnaW5DZXJ0aWZpY2F0ZS5hc3B4P0xhbmc9QVInLCB0aGlzKSI+2KfZhNiq2K3ZgtmCINmF2YYg2LTZh9in2K/YqSDYp9mE2YXZhti02KPYqTwvYT48L3RkPjwvdHI+PHRyPjx0ZCBpZD0nUGFyZW50NF9jaGlsZHMnIHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij48dGFibGUgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiBzdHlsZT0iV2lkdGg6MTAwJTsiPjwvdGFibGU+PC90ZD48L3RyPjwvdGFibGU+PHNjcmlwdCBsYW5ndWFnZT0iamF2YXNjcmlwdCI+IHZhciBhcnJNZW51TGV2ZWwySURzID0gbmV3IEFycmF5KCdQYXJlbnQxX2NoaWxkcycsJ1BhcmVudDJfY2hpbGRzJywnUGFyZW50M19jaGlsZHMnLCdQYXJlbnQ0X2NoaWxkcycpOw0KdmFyIGFyck1lbnVMZXZlbDNJRHMgPSBuZXcgQXJyYXkoKTsNCjwvc2NyaXB0Pg0KZAIJDw8WAh4EVGV4dAUp2KfZhNiq2K3ZgtmCINmF2YYg2LTZh9in2K/YqSDYp9mE2YXZhti02KNkZAILD2QWBAIBDxYCHwBoFgoCAw8QZGQWAQIBZAIFDxYCHwBoZAIHDxYCHwBoZAIJD2QWAmYPZBYCAgEPZBYCAgIPZBYCAgEPDxYCHwIFDDIwMjRDMDczMjAzVmRkAgsPFgIfAGgWAmYPFgIeBWFsaWduBQVyaWdodGQCAw8WAh8AZxYsAgMPDxYCHwIFcNmG2YXZiNiw2Kwg2KzYp9mF2LnYqSDYp9mE2K/ZiNmEINin2YTYudix2KjZitipIC8g2KjZhdmI2KzYqCDYp9it2YPYp9mFINin2KrZgdin2YLZitipINin2YTYr9mI2YQg2KfZhNi52LHYqNmK2KlkZAIFDw8WAh8CBQdCeSBTaGlwZGQCCw8PFgIfAgVQTS9TIFRyYWRlIEFuZCBNb3JlIFRBTSAg2KfZhNiz2KfYr9ipINiq2LHYp9mK2K8g2KPZhtivINmF2YjYsSDYp9mE2YXYrdiq2LHZhdmK2YZkZAINDw8WAh8CZWRkAhMPDxYCHwIFCtmE2KjZhtin2YZkZAIVDw8WAh8CBQdMRUJBTk9OZGQCGw8PFgIfAgUgTWFqZXlvdW4gLUxlYmFub24tINmE2KjZhtin2YYgCQlkZAIdDw8WAh8CZWRkAiMPDxYCHwIFa9i12YbYp9i52Ycg2YXYs9iq2K3Yttix2KfYqiDYp9mE2KrYrNmF2YrZhCDZiNin2YTZhdmI2KfYryDYp9mE2YPZitmF2KfZiNmK2Ycg2KfZhNmF2YbYstmE2YrZhyAg2KfZhNin2LHYr9mGZGQCJQ8PFgIfAmVkZAIrDw8WAh8CBQzYp9mE2KfYsdiv2YZkZAItDw8WAh8CZWRkAjMPDxYCHwIFCTIwMDAyMTAzOWRkAjUPDxYCHwIFEENvcnAuTmF0aW9uYWwgbm9kZAI5Dw8WAh8CBQkyMDI0OTE2NjdkZAI/Dw8WAh8CBQgxMDYvMjAyNGRkAkUPDxYCHwIFCjIwMjQtMTEtMTFkZAJLDw8WAh8CBUvYr9mI2YTYp9ixINin2YXYsdmK2YPZiiZuYnNwOyZuYnNwO1VuaXRlZCBTdGF0ZXMsRG9sbGFyKFVTRCkmbmJzcDszNjIyOS4yMDBkZAJRDw8WAh8CBQjYqNit2LHYp2RkAlcPDxYCHwIFB0J5IFNoaXBkZAJbD2QWAmYPZBYCAgEPPCsADgIAFCsAAg8WEB4cRW5hYmxlRW1iZWRkZWRCYXNlU3R5bGVzaGVldGceC18hSXRlbUNvdW50AgEeHWNzX2V2ZW50c19PbkZpbHRlck1lbnVTaG93aW5nBRFmaWx0ZXJNZW51U2hvd2luZx4XRW5hYmxlQWpheFNraW5SZW5kZXJpbmdoHgdDdWx0dXJlKCltU3lzdGVtLkdsb2JhbGl6YXRpb24uQ3VsdHVyZUluZm8sIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQJhch4LXyFEYXRhQm91bmRnHhJSZXNvbHZlZFJlbmRlck1vZGULKXNUZWxlcmlrLldlYi5VSS5SZW5kZXJNb2RlLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDE0LjMuMTIwOS40MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xMjFmYWU3ODE2NWJhM2Q0AR4VRW5hYmxlRW1iZWRkZWRTY3JpcHRzZ2QXAwULRWRpdEluZGV4ZXMWAAUPU2VsZWN0ZWRJbmRleGVzFgAFCFBhZ2VTaXplAhQBFgIWCw8CBxQrAAcUKwAFFgQfAGceCERhdGFUeXBlGSsCZGRkBQxHb29kc0Rlc2NfQVIUKwAFFgQfAGgfDBkrAmRkZAUMR29vZHNEZXNjX0VOFCsABRYCHwwZKwJkZGQFI051bWJlcl9LaW5kT2ZQYWNrYWdlc19TaGlwcGluZ01hcmtzFCsABRYCHwwZKwJkZGQFB0dyb3NzV3QUKwAFFgIfDBkrAmRkZAUMR3Jvc3NXdERzX0FSFCsABRYCHwwZKwJkZGQFBU5ldFd0FCsABRYCHwwZKwJkZGQFE0dyb3NzV3RfVW5pdElERHNfQVJkBQZTZXJpYWwUKwAACyl6VGVsZXJpay5XZWIuVUkuR3JpZENoaWxkTG9hZE1vZGUsIFRlbGVyaWsuV2ViLlVJLCBWZXJzaW9uPTIwMTQuMy4xMjA5LjQwLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDQBPCsABwALKXVUZWxlcmlrLldlYi5VSS5HcmlkRWRpdE1vZGUsIFRlbGVyaWsuV2ViLlVJLCBWZXJzaW9uPTIwMTQuMy4xMjA5LjQwLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDQBFgIeBF9lZnMWAh4EX2VjY2RkFgwfCWceCERhdGFLZXlzFgAfBQIBHhRJc0JvdW5kVG9Gb3J3YXJkT25seWgeBV8hQ0lTFwAeBV9xZWx0GSmBAVdhdmVNUlMuQ29tcG9uZW50cy5DZXJ0aWZpY2F0ZS5DZXJ0aWZpY2F0ZU9mT3JpZ2luLCBXYXZlTVJTLkNvbXBvbmVudHMsIFZlcnNpb249Mi4wLjEuMTg2MTYsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbGRmFgRmDxQrAANkZGRkAgEPFgUUKwACDxYMHwlnHw8WAB8FAgEfEGgfERcAHxIZKwhkFwQFC18hSXRlbUNvdW50AgEFA19mZWUFBl8hRFNJQwIBBQhfIVBDb3VudGQWAh4DX3NlFgIeAl9jZmQWB2RkZGRkZGQWAmdnFgJmD2QWCGYPZBYCZg9kFhJmDw8WBB8CBQYmbmJzcDsfAGhkZAIBDw8WBB8CBQYmbmJzcDsfAGhkZAICDw8WAh8CBSXZiNi12YEg2KfZhNiz2YTYuSAtIEdvb2RzIERlc2NyZXB0aW9uZGQCAw8PFgQfAgU82YjYtdmBINin2YTYs9mE2Lkg2KfZhtis2YTZitiy2YogLSBHb29kcyBEZXNjcmVwdGlvbiBFbmdsaXNoHwBoZGQCBA8PFgIfAgU+2LnYr9ivINmI2KfZhtmI2KfYuSDYp9mE2LfYsdmI2K8gLSBOdW1iZXIgQW5kIFR5cGUgT2YgUGFja2FnZXNkZAIFDw8WAh8CBSbYp9mE2YjYstmGINin2YTZgtin2KbZhSAtIEdyb3NzIFdlaWdodGRkAgYPDxYCHwIFJtmI2K3Yr9ipINin2YTZgtmK2KfYsyAtIE1lYXNydWluZyBVbml0ZGQCBw8PFgIfAgUk2KfZhNmI2LLZhiDYp9mE2LXYp9mB2YogLSBOZXQgV2VpZ2h0ZGQCCA8PFgIfAgUm2YjYrdiv2Kkg2KfZhNmC2YrYp9izIC0gTWVhc3J1aW5nIFVuaXRkZAIBDw8WAh8AaGQWAmYPZBYSZg8PFgIfAgUGJm5ic3A7ZGQCAQ8PFgIfAgUGJm5ic3A7ZGQCAg8PFgIfAgUGJm5ic3A7ZGQCAw8PFgIfAgUGJm5ic3A7ZGQCBA8PFgIfAgUGJm5ic3A7ZGQCBQ8PFgIfAgUGJm5ic3A7ZGQCBg8PFgIfAgUGJm5ic3A7ZGQCBw8PFgIfAgUGJm5ic3A7ZGQCCA8PFgIfAgUGJm5ic3A7ZGQCAg8PFgIeBF9paWgFATBkFhJmDw8WAh8AaGRkAgEPDxYEHwIFBiZuYnNwOx8AaGRkAgIPDxYCHwIFQ9mF2LPYqtit2LbYsdin2Kog2KrYrNmF2YrZhCDYrdiz2Kgg2KfZhNmB2KfYqtmI2LHYqSDYp9mE2YXYsdmB2YLYqSBkZAIDDw8WBB8CBQYmbmJzcDsfAGhkZAIEDw8WAh8CBQogMiwzMjkuMDAgZGQCBQ8PFgIfAgUHMTMyNzUuMmRkAgYPDxYCHwIFC9mD2LrZhSAvIEtHZGQCBw8PFgIfAgUGJm5ic3A7ZGQCCA8PFgIfAgUGJm5ic3A7ZGQCAw9kFgJmDw8WAh8AaGRkAl0PDxYCHwIFpATZitmC2LEg2KfZhNmF2LXYr9ixINin2YYg2KzZhdmK2Lkg2KfZhNio2YrYp9mG2KfYqiDYp9mE2YXYsNmD2YjYsdipINin2K/Zhtin2Ycg2LXYrdmK2K3YqSDZiNin2YYg2KfZhNiz2YTYuSDYp9mE2YjYp9ix2K/YqSDZgdmK2YfYpyDZhdiz2KrZiNmB2KfZhyDZhNmE2LTYsdmI2Lcg2YjYp9mE2YXYudin2YrZitixINmE2KXZg9iz2KfYqCDYtdmB2Kkg2KfZhNmF2YbYtNijLiDYqtmFINil2LXYr9in2LEg2LTZh9in2K/YqSDYp9mE2YXZhti02KMgINmB2Yog2LrYsdmB2Kkg2LXZhtin2LnYqSDYudmF2KfZhiDZiNmB2YIg2LTYsdmI2Lcg2YjZgtmI2KfYudivINin2YTYp9iq2YHYp9mC2YrYqSDYp9mE2YXYr9ix2KzYqSDZgdmKINin2YTYrNiv2YjZhCDYo9i52YTYp9mHINmI2K3Ys9ioINin2YTYo9i12YjZhC4gDTxici8+CSAgINiq2YUg2KfYs9iq2YrZgdin2KEg2LHYs9mI2YUg2LfZiNin2KjYuSAg2YjYp9ix2K/Yp9iqINmI2LLYp9ix2Kkg2KfZhNmF2KfZhNmK2Kkg2YjYp9mE2KjYp9mE2Log2YLZitmF2KrZh9inIDUg2K/Zhtin2YbZitixINin2LHYr9mG2YrYqWRkAhIPZBYCZg9kFgICAQ8PZBYCHgtDUGVybWlzc2lvbgUEdHJ1ZWQCFQ9kFgJmD2QWAgIDDw8WAh8CBSnYp9mE2KrYrdmC2YIg2YXZhiDYtNmH2KfYr9ipINin2YTZhdmG2LTYo2RkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYFBRFjdGwwMCRsYnRuTGFuZ2FnZQUjY3RsMDAkY3BoQ29udGVudCRndkNlcnRpZmljYXRlR29vZHMFD2N0bDAwJGlidG5DbG9zZQUQY3RsMDAkaWJ0blNwYWNlcgUZY3RsMDAkSWJ0bkRlZmF1bHRCdXR0b25JRFdmUjoaxUNdf+k3iRFeras92a5B" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WaveMRS/WebResource.axd?d=0RLU_OymPxslYj6oV2Z757D6D91a_boxoOH_xlRWFBKhfdVRZD8Oa7ZBcIcIobL7ZqXOp6HrCggujUu3X7vhv0HwaP01&amp;t=637814761746327080" type="text/javascript"></script>
+
+
+<script src="WaveMRS/Scripts/jquery.js" type="text/javascript"></script>
+<script src="WaveMRS/Scripts/jquery.scrollTomin.js" type="text/javascript"></script>
+<script src="WaveMRS/Scripts/ConfirmDialog.js" type="text/javascript"></script>
+<script src="WaveMRS/Scripts/AlertDialog.js" type="text/javascript"></script>
+<script src="WaveMRS/Scripts/GeneralScript.js" type="text/javascript"></script>
+<script src="WaveMRS/Scripts/EditableDate.js" type="text/javascript"></script>
+<script src="WaveMRS/Scripts/GridViewCheckBox.js" type="text/javascript"></script>
+<script src="WaveMRS/Scripts/UpLoadify/jquery.uploadify-3.1.min.js" type="text/javascript"></script>
+<script src="WaveMRS/Scripts/PopUp.js" type="text/javascript"></script>
+<script src="WaveMRS/Scripts/json2.js" type="text/javascript"></script>
+<script src="WaveMRS/Scripts/MaxLength.js" type="text/javascript"></script>
+<script src="WaveMRS/Scripts/InputLanguage.js" type="text/javascript"></script>
+<script src="WaveMRS/Scripts/ValidationSummary.js" type="text/javascript"></script>
+<script src="/WaveMRS/ScriptResource.axd?d=KiGm5Sxa56L_2fZ-HrUexghiB7hIvcpr6oaHpjcGj2q2eTVXuCr-26M4DUbF-RzoXFQjyg6d9KUuSXrPwY5uTIDH23lt6SRnvVJjdZodUK5IuJSfzbErCXY4gJYNG9tTaE-tpp5HKdc894cgEa_pz2dqVL3VhRWuXZo77VNuphaiIs5W0&amp;t=49337fe8" type="text/javascript"></script>
+<script src="/WaveMRS/ScriptResource.axd?d=TdydJd0ecXpxoOjptWToUPDw372oYxjQnLX_u7qZgqQX7vzSVT6M51RnS1Q4YXIR7yjwC1vbCMIKlY4E_cb38qkECRey55CEGbT4k_wc4uiBFHyJX4eHoNR3SxM8-1tDO3EU9Rn6_AZecNkyVsSNmTv5JW2cA1ifARt84_erHXIm0AeI0&amp;t=49337fe8" type="text/javascript"></script>
+<script src="/WaveMRS/ScriptResource.axd?d=-G3ZmEUd7WOEjGiR7T3iEa7l4pNaGbgOgXVaeIm3ihlvzqYh8boVcj6oa8_n3l9tqIVoSseNDHatNteELofteEFaZ6gQyCuxRa1dveTwTdFFiNcF1W7Uxvy6pJLFWOvMQxLaTQ2&amp;t=ffffffff83fd1515" type="text/javascript"></script>
+<script src="/WaveMRS/ScriptResource.axd?d=o4-pLB8J9_rgr1WSNMNz7S0cjlWaF78B3KAqDcj1xDux8YWz-E6sPpDm5rBqdnO6ve-Fd0MKfg_t09cyg6oYxSWN1OVm-DEUHhy5VU1p3aJhytKRtv3r6YE4D7SLQEV5FAY_CZG5actbr8Kj4-GUhQ4zYmk1&amp;t=ffffffff83fd1515" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4BA8210C" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABHQJlTcvnXLnXMqrWLHY0o/PIdL6M5QvDxRORE16Jkc45hqJBhOlkhzgWXxwaV+zgxloNi4xNl1xDRFbmTUmkWMV5ezempvL1TBr8MF/C2SF5A1Q3YOTmHf20y0FVTICz8uZhl0wR/g92HHeL4viAWSX9IPaAoieomwJX9mN+JgQbuGQPkCaXfTvmHNigk4x7BtStoNprlt0Zl2jpFnm+GV0JCSNyTBWVinxleE36rZjFvgrJmSECOJuFYAO7TjKI7Ul7NdrxcGdA+Z1kCam/ZVTso90ww4Dxgoqrdql/8f9Gr6fIB68UjTRSWHXzjhalWs1NgAlGuxgeu0zLpHVLSGtrHMVOupNDwR49c4hAFZB22xPNKR9jk/jCdaD0j2LE3oD72m" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$oScriptManager', 'form1', ['tctl00$cphContent$upView','cphContent_upView','tctl00$oUpdatePanelResult','oUpdatePanelResult','tctl00$UpdatePanel1','UpdatePanel1','tctl00$upPopupTitle','upPopupTitle','tctl00$oUpdatePanelPopupResult','oUpdatePanelPopupResult'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <input name="ctl00$hdnMenuLevel1SelectedID" type="hidden" id="hdnMenuLevel1SelectedID" />
+        <input name="ctl00$hdnMenuLevel2SelectedID" type="hidden" id="hdnMenuLevel2SelectedID" />
+        <input name="ctl00$hdnSelectedLinkID" type="hidden" id="hdnSelectedLinkID" />
+        <script type="text/javascript" language="javascript">
+            var sLevel1TdID = 'hdnMenuLevel1SelectedID';
+            var sLevel2TdID = 'hdnMenuLevel2SelectedID';
+            var sLevel1TdIDValue = document.getElementById('hdnMenuLevel1SelectedID').value;
+            var sLevel2TdIDValue = document.getElementById('hdnMenuLevel2SelectedID').value;
+            //<![CDATA[
+            function __MenuPostBack(eventTarget, eventArgument, oLink) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    if (oLink != undefined && oLink.id != undefined) {
+                        document.getElementById('hdnSelectedLinkID').value = oLink.id;
+                    }
+                    __doPostBack(eventTarget, eventArgument);
+                }
+            }
+            //]]>
+
+            function WebForm_OnSubmit() {
+
+                if (typeof (ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) {
+                    showValidations();
+                    return false;
+                }
+                else {
+                    hiddenDivValidations();
+                    return true;
+                }
+            }
+        </script>
+        <div id="dvValidations">
+            <div id="dvCloseValidations">
+            </div>
+            <div style="width: 100%; margin-top: 20px">
+                <div id="dvGeneralValidationSummary">
+                </div>
+                
+    <div id="cphFilter_vsGeneralInformation" class="OperationResultSummary" style="display:none;">
+
+</div>
+
+            </div>
+        </div>
+        <div id="dvOperationResultContainer" align="center">
+            <div id="dvOperationResult">
+            </div>
+        </div>
+        <div id="Loading">
+        </div>
+        <div id="container" style="overflow: auto">
+            <table style="width: 100%;" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <div id="header">
+                            <div style="float: left; width: 180px; height: 66px;">
+                                <div style="float: right; width: 60px; height: 66px; background-image: url('WaveMRS/Images/Header/WaveMRS_r1_c1_2.jpg')">
+                                </div>
+                                <div style="float: left; height: 66px; background-image: url('WaveMRSImages/Header/GRP_background_left2.jpg'); background-repeat: repeat-x;">
+                                    <img src="WaveMRS/Images/Header/GRP_clientLogo_left.png" alt="" width="120px" height="62px" />
+                                </div>
+                            </div>
+                            <div style="float: right; width: 282px; height: 66px;">
+                                <div style="float: left; background-image: url('WaveMRS/Images/Header/WaveMRS_r1_c3.jpg'); width: 60px; height: 66px;">
+                                </div>
+                                <div style="float: right; background-image: url('WaveMRS/Images/Header/WaveMRS_Logo.jpg'); width: 222px; height: 54px; cursor: pointer"
+                                    onclick="imgWaveGRP_Click()">
+                                </div>
+                                <div style="float: right; background-image: url('WaveMRS/Images/Header/HeaderBottomRight.jpg'); width: 222px; height: 18px;">
+                                </div>
+                            </div>
+                            <div style="height: 66px;">
+                                <div style="background-image: url('WaveMRS/Images/Header/WaveMRS_r1_c2.jpg'); height: 34px; width: 100%; text-align: center; font-weight: bolder; color: #FFF; font-size: 18px; vertical-align: bottom;">
+                                    <img src="WaveMRS/Images/Header/GRP_clientName_center.png" alt="" width="170px" />
+                                </div>
+                                <div style="height: 32px; background-image: url('WaveMRS/Images/Header/WaveMRS_r2_c2.jpg'); width: 100%">
+                                    <table style="height: 24px;" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td style="height: 24px;">
+                                                <span id="lblUserName" class="MasterUserName" style="display:inline-block;font-weight:bold;width:300px;"></span>
+                                            </td>
+                                            <td class="Text" style="height: 24px;">
+                                                
+                                            </td>
+                                            <td style="width: 90%"></td>
+                                            <td></td>
+                                            <td>
+                                                <img src="WaveMRS/Images/AccessIcon/border.jpg" alt="" width="1px" />
+                                            </td>
+                                            <td style="width: 25px;">
+                                                <input type="image" name="ctl00$lbtnLangage" id="lbtnLangage" tabindex="9999" title="إنجليزي" alt="إنجليزي" src="WaveMRS/Images/AccessIcon/Language.jpg" alt="إنجليزي" />
+                                            </td>
+                                            <td>
+                                                <img src="WaveMRS/Images/AccessIcon/border.jpg" alt="" width="1px" />
+                                            </td>
+                                            <td style="width: 25px;">
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="divBody">
+                            <table>
+                                <tr>
+                                    <td style="width: 200px" valign="top">
+                                        <table id="tblMenu" style="width: 180px">
+	<tr>
+		<td id="tdMenu" valign="top">
+            <Table id="WaveMRSMenu" cellpadding="0" cellspacing="2" style="Width:200px">
+                <tr>
+                    <td id='Parent1' childid='' style="" class='MenuLevel1Standard'>
+                        <a id='10'  href='#' title="مستخدم جديد" onclick="__CloseMenuChilds('',0);__MenuPostBack('MenuClick','Pages/RegisterOnlineUsers.aspx?Lang=AR', this)">مستخدم جديد</a>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td id='Parent1_childs' style="display:none;">
+                                <table cellpadding="0" cellspacing="0" style="Width:100%;">
+                                </table></td></tr><tr>
+                                    <td id='Parent2' childid='' style="" class='MenuLevel1Standard'>
+                                        <a id='20'  href='#' title="نسيت كلمة المرور" onclick="__CloseMenuChilds('',0);__MenuPostBack('MenuClick','Pages/ForgotPassword.aspx?Lang=AR', this)">نسيت كلمة المرور</a></td></tr><tr><td id='Parent2_childs' style="display:none;"><table cellpadding="0" cellspacing="0" style="Width:100%;"></table></td></tr><tr><td id='Parent3' childid='' style="" class='MenuLevel1Standard'><a id='30'  href='#' title="التحقق من شهادة العضوية" onclick="__CloseMenuChilds('',0);__MenuPostBack('MenuClick','Pages/VertifyMembershipCertificate.aspx?Lang=AR', this)">التحقق من شهادة العضوية</a></td></tr><tr><td id='Parent3_childs' style="display:none;"><table cellpadding="0" cellspacing="0" style="Width:100%;"></table></td></tr><tr><td id='Parent4' childid='' style="" class='MenuLevel1Standard'><a id='40'  href='#' title="التحقق من شهادة المنشأة" onclick="__CloseMenuChilds('',0);__MenuPostBack('MenuClick','Pages/VertifyOriginCertificate.aspx?Lang=AR', this)">التحقق من شهادة المنشأة</a></td></tr><tr><td id='Parent4_childs' style="display:none;"><table cellpadding="0" cellspacing="0" style="Width:100%;"></table></td></tr></table><script language="javascript"> var arrMenuLevel2IDs = new Array('Parent1_childs','Parent2_childs','Parent3_childs','Parent4_childs');
+var arrMenuLevel3IDs = new Array();
+</script>
+</td>
+	</tr>
+</table>
+
+                                    </td>
+                                    <td id="tdcontent" style="width: 100%" valign="top">
+                                        <table style="width: 100%">
+                                            <tr>
+                                                <td>
+                                                    <div style="margin-top: 10px;">
+                                                        
+                                                        <!--Start Content Header -->
+                                                        <div style="float: left; height: 26px; width: 8px; background-image: url('WaveMRS/Images/Frames/frame_09.jpg')">
+                                                        </div>
+                                                        <div style="float: right; height: 26px; width: 8px; background-image: url('WaveMRS/Images/Frames/frame_13.jpg')">
+                                                        </div>
+                                                        <div style="height: 26px; background-image: url('WaveMRS/Images/Frames/frame_10.jpg'); text-align: center;">
+                                                            <input id="txtfocus" type="text" tabindex="10000000" style="float: right; width: 0px; height: 0px; margin-top: 1px; border: thick none #A6BFDE" />
+                                                            <div style="padding-top: 5px;">
+                                                                <span id="lblLeft" class="PageTitle">..::</span>
+                                                                <span id="lblPageTitle" class="PageTitle">التحقق من شهادة المنشأ</span>
+                                                                <span id="lblRight" class="PageTitle">::..</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="content" style="border-right-style: groove; border-bottom-style: groove; border-left-style: groove; border-right-width: thin; border-bottom-width: thin; border-left-width: thin; padding: 5px; border-right-color: #BFDBFF; border-bottom-color: #BFDBFF; border-left-color: #BFDBFF; height: 475px"
+                                                    valign="top">
+                                                    
+    
+    <div id="cphContent_dvData">
+        <table border="0" style="direction:rtl" width="100%">
+            <tr>
+                <td align="center">
+                    <img src="WaveMRS/Images/ACCLogo.jpg" alt="" width="240px" height="124px">
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%;direction:rtl"  border="0">
+            <tr>
+                <td style="height: 15px"></td>
+            </tr>
+            <tr>
+                <td style="width: 20px"></td>
+                <td>
+                    <span id="cphContent_lblTemplateType" class="aspNetDisabled StandardFont"> نوع النموذج</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="right">
+                    <span id="cphContent_lblTemplateTypeValue" class="StandardFont">نموذج جامعة الدول العربية / بموجب احكام اتفاقية الدول العربية</span>
+                </td>
+                <td align="left">
+                    <span id="cphContent_lblTemplateTypeValueEn" class="StandardFont">By Ship</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="left">
+                    <span id="cphContent_lblTemplateTypeEN" class="aspNetDisabled StandardFont">Template Type</span>
+                </td>
+                <td style="width: 20px"></td>
+
+            </tr>
+            <tr>
+                <td style="width: 20px"></td>
+                <td>
+                    <span id="cphContent_lblImprterName" class="aspNetDisabled StandardFont"> اسم المستورد</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="right">
+                    <span id="cphContent_lblImprterNameValue" class="StandardFont">M/S Trade And More TAM  السادة ترايد أند مور المحترمين</span>
+                </td>
+                <td align="left">
+                    <span id="cphContent_lblImprterNameValueEn" class="StandardFont"></span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="left">
+                    <span id="cphContent_lblImprterNameEN" class="aspNetDisabled StandardFont">Imprter Name </span>
+                </td>
+                <td style="width: 20px"></td>
+
+            </tr>
+            <tr>
+                <td style="width: 20px"></td>
+                <td>
+                    <span id="cphContent_lblImprterCountry" class="aspNetDisabled StandardFont">دولة المستورد</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="right">
+                    <span id="cphContent_lblImprterCountryValue" class="StandardFont">لبنان</span>
+                </td>
+                <td align="left">
+                    <span id="cphContent_lblImprterCountryValueEn" class="StandardFont">LEBANON</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="left">
+                    <span id="cphContent_Label2" class="aspNetDisabled StandardFont">Imprter Country </span>
+                </td>
+                <td style="width: 20px"></td>
+            </tr>
+            <tr>
+                <td style="width: 20px"></td>
+                <td>
+                    <span id="cphContent_lblImporterAddres" class="aspNetDisabled StandardFont"> عنوان المستورد </span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="right">
+                    <span id="cphContent_lblImporterAddresValue" class="StandardFont">Majeyoun -Lebanon- لبنان 		</span>
+                </td>
+                <td align="left">
+                    <span id="cphContent_lblImporterAddresValueEN" class="StandardFont"></span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="left">
+                    <span id="cphContent_lblImporterAddresEN" class="aspNetDisabled StandardFont"> Imprter Address </span>
+                </td>
+                <td style="width: 20px"></td>
+            </tr>
+            <tr>
+                <td style="width: 20px"></td>
+                <td>
+                    <span id="cphContent_Label4" class="aspNetDisabled StandardFont">اسم المصدر</span>
+                </td>
+                <td class="Colon"><b>:</b></td>
+                <td align="right">
+                    <span id="cphContent_lblExporterNameValue" class="StandardFont">صناعه مستحضرات التجميل والمواد الكيماويه المنزليه  الاردن</span>
+                </td>
+                <td align="left">
+                    <span id="cphContent_lblExporterNameValueEn" class="StandardFont"></span>
+                </td>
+                <td class="Colon"><b>:</b></td>
+                <td align="left">
+                    <span id="cphContent_Label7" class="aspNetDisabled StandardFont">Exporter Name</span>
+                </td>
+                <td style="width: 20px"></td>
+            </tr>
+            <tr>
+                <td style="width: 20px"></td>
+                <td>
+                    <span id="cphContent_Label8" class="aspNetDisabled StandardFont">عنوان المصدر</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="right">
+                    <span id="cphContent_lblExporterAddressValue" class="StandardFont">الاردن</span>
+                </td>
+                <td align="left">
+                    <span id="cphContent_lblExporterAddressValueEn" class="StandardFont"></span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="left">
+                    <span id="cphContent_lbl" class="aspNetDisabled StandardFont">Exporter Address </span>
+                </td>
+                <td style="width: 20px"></td>
+            </tr>
+            <tr>
+                <td style="width: 20px"></td>
+                <td>
+                    <span id="cphContent_lblCNationalNo" class="StandardFont"> الرقم الوطني للمنشأة</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td colspan="2" align="center">
+                    <span id="cphContent_lblCNationalNoValue" class="StandardFont">200021039</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="left">
+                    <span id="cphContent_Label6" class="StandardFont">Corp.National no</span>
+                </td>
+                <td style="width: 20px"></td>
+            </tr>
+            <tr>
+                <td style="width: 20px"></td>
+                <td>
+                    <span id="cphContent_lblCertificateNoAR" class="aspNetDisabled StandardFont">رقم الشهادة</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td colspan="2" align="center">
+                    <span id="cphContent_lblCertificateNoValue" class="StandardFont">202491667</span>
+                </td>
+                <td class="Colon" style=""><b>:</b>
+                </td>
+                <td align="left">
+                    <span id="cphContent_lblCertificateNoEN" class="aspNetDisabled StandardFont">Certificate Number</span>
+                </td>
+                <td style="width: 20px"></td>
+            </tr>
+
+            <tr>
+                <td style="width: 20px"></td>
+                <td>
+                    <span id="cphContent_lblInoviceNo" class="aspNetDisabled StandardFont">رقم الفاتورة</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td colspan="2" align="center">
+                    <span id="cphContent_lblInoviceNoValue" class="StandardFont">106/2024</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="left">
+                    <span id="cphContent_lblInoviceNoEN" class="aspNetDisabled StandardFont">Inovice Number</span>
+                </td>
+                <td style="width: 20px"></td>
+            </tr>
+            <tr>
+                <td style="width: 20px"></td>
+                <td>
+                    <span id="cphContent_lblInoviceDate" class="aspNetDisabled StandardFont"> تاريخ الفاتورة</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td colspan="2" align="center">
+                    <span id="cphContent_lblInoviceDateValue" class="StandardFont">2024-11-11</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="left">
+                    <span id="cphContent_Label1" class="aspNetDisabled StandardFont">Inovice Date </span>
+                </td>
+                <td style="width: 20px"></td>
+            </tr>
+
+            <tr>
+                <td style="width: 20px"></td>
+                <td>
+                    <span id="cphContent_lblInvoiceValue" class="aspNetDisabled StandardFont"> قيمة الفاتورة الاجمالية</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td colspan="2" align="center">
+                    <span id="cphContent_lblInvoiceValueValue" class="StandardFont">دولار امريكي&nbsp;&nbsp;United States,Dollar(USD)&nbsp;14918.400</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="left">
+                    <span id="cphContent_lblInvoiceValueEN" class="aspNetDisabled StandardFont">Invoice Value</span>
+                </td>
+
+                <td style="width: 20px"></td>
+            </tr>
+            <tr>
+                <td style="width: 20px"></td>
+                <td>
+                    <span id="cphContent_lblShippingDetails" class="aspNetDisabled StandardFont">تفاصيل الشحن باللغة العربية</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td colspan="2" align="center">
+                    <span id="cphContent_lblShippingDetailsValue" class="StandardFont">بحرا</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="left">
+                    <span id="cphContent_Label3" class="aspNetDisabled StandardFont">Shipping Details Arabic</span>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 20px"></td>
+                <td>
+                    <span id="cphContent_lblShippingDetailsEN" class="aspNetDisabled StandardFont">تفاصيل الشحن باللغة بالانجليزية</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td colspan="2" align="center">
+                    <span id="cphContent_lblShippingDetailsValueEN" class="StandardFont">By Ship</span>
+                </td>
+                <td class="Colon"><b>:</b>
+                </td>
+                <td align="left">
+                    <span id="cphContent_Label3EN" class="aspNetDisabled StandardFont">Shipping Details English</span>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 15px"></td>
+            </tr>
+            <tr>
+                <td colspan="5">&nbsp;</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+
+        </table>
+        <div id="cphContent_upView">
+	
+                <div  style="direction:rtl">
+                    <div id="ctl00_cphContent_gvCertificateGoods" class="RadGrid RadGrid_Vista" ProfilerTitle="بضائع شهادات المنشأ" ProfilerKeys="AutoSerial,GID">
+
+	<!-- 2014.3.1209.40 -->
+    <table class="rgMasterTable rgClipCells" id="ctl00_cphContent_gvCertificateGoods_ctl00" dir="rtl" style="width:100%;table-layout:fixed;overflow:hidden;empty-cells:show;">
+		<colgroup>
+		<col style="width:25%">
+		<col style="width:17%">
+		<col>
+		<col>
+		<col>
+		<col>
+	</colgroup>
+<thead>
+			<tr>
+				<th scope="col" class="rgHeader" style="text-align:right;" title="">وصف السلع - Goods Descreption</th><th scope="col" class="rgHeader" style="text-align:right;" title="">عدد وانواع الطرود - Number And Type Of Packages</th><th scope="col" class="rgHeader" style="text-align: right;" title="">الوزن القائم - Gross Weight</th><th scope="col" class="rgHeader" style="text-align:right;">وحدة القياس - Measruing Unit</th><th scope="col" class="rgHeader" style="text-align:right;">الوزن الصافي - Net Weight</th><th scope="col" class="rgHeader" style="text-align:right;">وحدة القياس - Measruing Unit</th>
+			</tr>
+		</thead><tbody>
+		<tr class="rgRow" id="ctl00_cphContent_gvCertificateGoods_ctl00__0">
+			<td style="width:25%;">مستحضرات تجميل حسب الفاتورة المرفقة </td><td> 2,329.00 </td><td>13275.2</td><td>كغم / KG</td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr>
+		</tbody>
+
+	</table>
+    <input id="ctl00_cphContent_gvCertificateGoods_ClientState" name="ctl00_cphContent_gvCertificateGoods_ClientState" type="hidden" />	</div>
+	
+                </div>
+            
+</div>
+        <div  style="padding: 3%; direction: rtl">
+            <span id="cphContent_lblVerificationNote1" class="aspNetDisabled StandardFont">يقر المصدر ان جميع البيانات المذكورة ادناه صحيحة وان السلع الواردة فيها مستوفاه للشروط والمعايير لإكساب صفة المنشأ. تم إصدار شهادة المنشأ  في غرفة صناعة عمان وفق شروط وقواعد الاتفاقية المدرجة في الجدول أعلاه وحسب الأصول. 
+<br/>	   تم استيفاء رسوم طوابع  واردات وزارة المالية والبالغ قيمتها 5 دنانير اردنية</span>
+        </div>
+    </div>
+
+                                                    <div id="oUpdatePanelResult">
+	
+                                                            <div id="DivOperationResult" style="padding: 5px;">
+                                                                <span id="lblOperationResult" class="OperationResult"></span>
+                                                            </div>
+                                                        
+</div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="footer" style="background-image: url(&#39;WaveMRS/Images/Header/WaveMRS_r6_c1.jpg&#39;);">
+                            <div style="padding-top: 5px;">
+                                <span id="lbl_CopyRight" class="CopyRight">WaveERP - MRS ® v1.0 © 2023</span>
+                                <a id="A1" href='http://www.itgsolutions.com/' tabindex="10000" target='_blank'><span>
+                                    المجموعة المتكاملة للتكنولوجيا.
+                                </span></a>
+                                <span id="lblAllRight" class="CopyRight">جميع الحقوق محفوظة</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="ConfirmBox" style="left: 0px; width: 100px; top: -21px; height: 150px">
+            <input type="hidden" name="ctl00$hdnMessageDimension" id="hdnMessageDimension" value="400,150" />
+            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                <tr>
+                    <td id="ConfirmTitle" style="padding-right: 10px; padding-top: 4px; vertical-align: text-top; line-height: 13px;">
+                        <span id="lblConfirmTitleText" class="StandardFont">وسم</span>
+                    </td>
+                    <td>
+                        <input type="image" name="ctl00$ibtnClose" id="ibtnClose" title="إغلاق" src="WaveMRS/Images/Buttons/X.jpg" alt="إغلاق" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="height: 15px;"></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="1">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="height: 60px; vertical-align: middle">
+                                    <img align="top" src="WaveMRS/Images/Message.jpg" alt="" />
+                                </td>
+                                <td style="width: 20px;"></td>
+                                <td style="vertical-align: middle">
+                                    <span id="lblMSG" class="StandardFont">وسم</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="height: 15px;"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" align="center">
+                                    <table border="0">
+                                        <tr>
+                                            <td align="center">
+                                                <div id="UpdatePanel1">
+	
+                                                        <a id="ibtnYes" title="نعم" class="CustomLinkButton" CPermission="true" href="javascript:__doPostBack(&#39;ctl00$ibtnYes&#39;,&#39;&#39;)"><span style='width:px;text-align:center;'>نعم</span></a>
+                                                    
+</div>
+                                            </td>
+                                            <td>
+                                                <input type="image" name="ctl00$ibtnSpacer" id="ibtnSpacer" src="WaveMRS/Images/Buttons/spacer.Gif" style="width:5px;" />
+                                            </td>
+                                            <td align="center">
+                                                <a id="ibtnNo" title="لا" class="CustomLinkButton" href="javascript:__doPostBack(&#39;ctl00$ibtnNo&#39;,&#39;&#39;)"><span style='width:px;text-align:center;'>لا</span></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="height: 15px;"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="divPopup" class="divPopup">
+            <!--Start Popup Header -->
+            <div style="float: left; height: 26px; width: 8px; background-image: url('WaveMRS/Images/Frames/frame_09.jpg')">
+            </div>
+            <div style="float: right; height: 26px; width: 8px; background-image: url('WaveMRS/Images/Frames/frame_13.jpg')">
+            </div>
+            <div style="height: 26px; background-image: url('WaveMRS/Images/Frames/frame_10.jpg'); text-align: center;">
+                <div style="float: right; height: 26px; width: 22px; padding-top: 3px;">
+                    <img src="WaveMRS/Images/Buttons/X.jpg" class="ClosePopup" alt="Close" />
+                </div>
+                <div style="padding-top: 5px;">
+                    <div id="upPopupTitle">
+	
+                            <span id="Label1" class="PageTitle">..::</span>
+                            <span id="lblPopupHeader" class="PageTitle">التحقق من شهادة المنشأ</span>
+                            <span id="Label3" class="PageTitle">::..</span>
+                        
+</div>
+                </div>
+            </div>
+            <!--End Popup Header -->
+            <!-- Start Content Body -->
+            <div style="border-bottom: 1px #0D89D1 solid; border-left: 1px #0D89D1 solid; border-right: 1px #0D89D1 solid; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; padding: 5px; clear: both">
+                <!-- Start Popup Content -->
+                <div style="border: 1px #0D89D1 solid; border-radius: 6px; padding: 5px; max-height: 700px; overflow: auto;">
+                    
+
+                    <div id="oUpdatePanelPopupResult">
+	
+                            <div id="DivPopupOperationResult" style="padding: 5px;">
+                                <span id="lblPopupOperationResult" class="OperationResult"></span>
+                            </div>
+                        
+</div>
+                </div>
+                <!--End Popup Content -->
+                <!-- End Content Body -->
+            </div>
+        </div>
+        <!-- Pop up client side  -->
+        <div id="divClientPopUp" class="divPopup">
+            <iframe id="iframeClientPopUp" width="100%" style="height: 550px;" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div id="divBackground">
+        </div>
+        <!-- End of pop up client side  -->
+        <div id="LoadBackGround">
+        </div>
+        <div id="ConfirmBackGround">
+        </div>
+        <div id="divPopupConfirmBackGround">
+        </div>
+        <div id="MessageBoxBackGround">
+        </div>
+        <input type="hidden" name="ctl00$hdnCurrentLangage" id="hdnCurrentLangage" />
+        <input type="hidden" name="ctl00$hdnDisableValidationOnTab" id="hdnDisableValidationOnTab" />
+        <input type="hidden" name="ctl00$hdnData_Operation" id="hdnData_Operation" />
+        <input type="hidden" name="ctl00$hdnData_Data" id="hdnData_Data" />
+        <input type="hidden" name="ctl00$hdnTabSelected" id="hdnTabSelected" />
+        <input type="hidden" name="ctl00$hdnMenuSelected" id="hdnMenuSelected" />
+        <input type="image" name="ctl00$IbtnDefaultButtonID" id="IbtnDefaultButtonID" src="" onclick="return false;" style="display: none" />
+        <!-- *** Text Generated by ITG Refresh trap control *** -->
+<input type=hidden id="REF_SYNC_TOKEN_SALHI" name="REF_SYNC_TOKEN_SALHI" value="NO_SESSION_KEY_CHANGE">
+<!-- *** End of Text Generated by ITG Refresh trap control *** -->
+
+        <script type="text/javascript" language="javascript">
+            var theForm = document.getElementById('form1'); //document.forms['aspnetForm'];//
+            if (!theForm) {
+                theForm = document.aspnetForm;
+            }
+
+            var sLevel1TdIDValue = document.getElementById('hdnMenuLevel1SelectedID').value;
+            var sLevel2TdIDValue = document.getElementById('hdnMenuLevel2SelectedID').value;
+            if (sLevel1TdIDValue != '' && sLevel1TdIDValue != 'undefined') {
+                var Level1ParentTd = sLevel1TdIDValue.substr(0, sLevel1TdIDValue.indexOf("_child"));
+                document.getElementById(sLevel1TdIDValue).style.display = '';
+                document.getElementById(Level1ParentTd).className = "MenuLevel1Up";
+            }
+            if (sLevel2TdIDValue != '' && sLevel2TdIDValue != 'undefined') {
+                var Level2ParentTd = sLevel2TdIDValue.substr(0, sLevel2TdIDValue.indexOf("_child"));
+
+                if (document.getElementById(sLevel2TdIDValue) != undefined)
+                    document.getElementById(sLevel2TdIDValue).style.display = '';
+
+                if (document.getElementById(Level2ParentTd) != undefined)
+                    document.getElementById(Level2ParentTd).className = "MenuLevel2Up";
+            }
+            var sSelectedLink = document.getElementById('hdnSelectedLinkID').value;
+            //HighLight selected link
+            if (sSelectedLink != '' && sSelectedLink != 'undefined') {
+                if (document.getElementById(sSelectedLink) != undefined) {
+                    document.getElementById(sSelectedLink).className = 'SelectedLink';
+                    document.getElementById(sSelectedLink).parentNode.className = 'ParentOfSelectedLink';
+                }
+            }
+
+
+        </script>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("cphFilter_vsGeneralInformation"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var cphFilter_vsGeneralInformation = document.all ? document.all["cphFilter_vsGeneralInformation"] : document.getElementById("cphFilter_vsGeneralInformation");
+cphFilter_vsGeneralInformation.displaymode = "List";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+(function(id) {
+    var e = document.getElementById(id);
+    if (e) {
+        e.dispose = function() {
+            Array.remove(Page_ValidationSummaries, document.getElementById(id));
+        }
+        e = null;
+    }
+})('cphFilter_vsGeneralInformation');
+var column = null;function MenuShowing(sender, args) {if (column == null) return;var menu = sender; var items = menu.get_items();if (column.get_dataType() == "System.String") {var i = 0;while (i < items.get_count()) {if (!(items.getItem(i).get_value() in {  'NoFilter': '', 'Contains': '', 'NotIsEmpty': '', 'IsEmpty': '', 'NotEqualTo': '', 'EqualTo': '' })) {var item = items.getItem(i);if (item != null)item.set_visible(false);     }else {  var item = items.getItem(i);if (item != null)item.set_visible(true);} i++;    }  }if (column.get_dataType() == "System.Boolean") {var i = 0;while (i < items.get_count()) {if (!(items.getItem(i).get_value() in {  'NoFilter': '', 'EqualTo': '' })) {var item = items.getItem(i);if (item != null)item.set_visible(false);     }else {  var item = items.getItem(i);if (item != null)item.set_visible(true);} i++;    }  }if (column.get_dataType() == "System.Int64") {var j = 0; while (j < items.get_count()) {if (!(items.getItem(j).get_value() in { 'NoFilter': '', 'GreaterThan': '', 'LessThan': '', 'NotEqualTo': '', 'EqualTo': '' })) {var item = items.getItem(j); if (item != null)item.set_visible(false);      }else { var item = items.getItem(j); if (item != null) item.set_visible(true); } j++;    }  }column = null;}function filterMenuShowing(sender, eventArgs) {column = eventArgs.get_column();}Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadGrid, {"ClientID":"ctl00_cphContent_gvCertificateGoods","ClientSettings":{"AllowAutoScrollOnDragDrop":true,"EnableRowHoverStyle":true,"ShouldCreateRows":true,"DataBinding":{},"Selecting":{"CellSelectionMode":0},"Scrolling":{},"Resizing":{"AllowColumnResize":true,"ClipCellContentOnResize":true,"AllowResizeToFit":true},"ClientMessages":{"DragToGroupOrReorder":"اسحب للتجميع او للترتيب","DragToResize":"اسحب لتغيير الحجم","DropHereToReorder":"انزل هنا للترتيب","PagerTooltipFormatString":"الصفحة \u003cstrong\u003e{0}\u003c/strong\u003e من \u003cstrong\u003e{1}\u003c/strong\u003e","ColumnResizeTooltipFormatString":"العرض: \u003cstrong\u003e{0}\u003c/strong\u003e \u003cem\u003epixels\u003c/em\u003e"},"KeyboardNavigationSettings":{"AllowActiveRowCycle":false,"EnableKeyboardShortcuts":true,"FocusKey":89,"InitInsertKey":73,"RebindKey":82,"ExitEditInsertModeKey":27,"UpdateInsertItemKey":13,"DeleteActiveRow":127,"ExpandDetailTableKey":39,"CollapseDetailTableKey":37,"SaveChangesKey":85,"CancelChangesKey":67},"Animation":{},"Virtualization":{}},"Skin":"Vista","UniqueID":"ctl00$cphContent$gvCertificateGoods","_activeRowIndex":"","_controlToFocus":"","_currentPageIndex":0,"_defaultDateTimeFormat":"dd/MM/yyyy HH:mm:ss","_editIndexes":"[]","_embeddedSkin":true,"_gridTableViewsData":"[{\"ClientID\":\"ctl00_cphContent_gvCertificateGoods_ctl00\",\"UniqueID\":\"ctl00$cphContent$gvCertificateGoods$ctl00\",\"PageSize\":20,\"PageCount\":1,\"EditMode\":\"EditForms\",\"AllowPaging\":false,\"CurrentPageIndex\":0,\"VirtualItemCount\":0,\"AllowMultiColumnSorting\":false,\"AllowNaturalSort\":true,\"AllowFilteringByColumn\":false,\"PageButtonCount\":10,\"HasDetailTables\":false,\"HasMultiHeaders\":false,\"CheckListWebServicePath\":\"\",\"GroupLoadMode\":\"Server\",\"PagerAlwaysVisible\":false,\"goToPageTextBoxClientID\":\"\",\"changePageSizeTextBoxClientID\":\"\",\"IsItemInserted\":false,\"clientDataKeyNames\":[],\"hasDetailItemTemplate\":false,\"_dataBindTemplates\":false,\"_selectedItemStyle\":\"\",\"_selectedItemStyleClass\":\"rgSelectedRow\",\"_columnsData\":[{\"UniqueName\":\"GoodsDesc_AR\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"DataTypeName\":\"System.String\",\"DataField\":\"GoodsDesc_AR\",\"Display\":true},{\"UniqueName\":\"Number_KindOfPackages_ShippingMarks\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"DataTypeName\":\"System.String\",\"DataField\":\"Number_KindOfPackages_ShippingMarks\",\"Display\":true},{\"UniqueName\":\"GrossWt\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"DataTypeName\":\"System.String\",\"DataField\":\"GrossWt\",\"Display\":true},{\"UniqueName\":\"GrossWtDs_AR\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"DataTypeName\":\"System.String\",\"DataField\":\"GrossWtDs_AR\",\"Display\":true},{\"UniqueName\":\"NetWt\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"DataTypeName\":\"System.String\",\"DataField\":\"NetWt\",\"Display\":true},{\"UniqueName\":\"GrossWt_UnitIDDs_AR\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"DataTypeName\":\"System.String\",\"DataField\":\"GrossWt_UnitIDDs_AR\",\"Display\":true}]}]","_masterClientID":"ctl00_cphContent_gvCertificateGoods_ctl00","_shouldFocusOnPage":false,"allowMultiRowSelection":false,"clientStateFieldID":"ctl00_cphContent_gvCertificateGoods_ClientState","expandItems":{},"renderMode":1}, {"filterMenuShowing":filterMenuShowing}, null, $get("ctl00_cphContent_gvCertificateGoods"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

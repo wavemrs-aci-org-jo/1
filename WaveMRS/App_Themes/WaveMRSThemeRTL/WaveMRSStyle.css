@@ -1,0 +1,761 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	height: 100%;
+}
+
+/*Start ITGLinkButton By Jehad */
+.CustomLinkButton {
+	cursor: pointer;
+	cursor: hand;
+	line-height: 26px;
+	height: 26px;
+	background: url(../../Images/Buttons/linkbutton.png) no-repeat right top;
+	padding-right: 16px;
+	padding-bottom: 2px;
+	display: inline-block;
+	font-family: Arial,sans-serif;
+	color: #1d6db6;
+	font-size: 11pt;
+	font-weight: normal;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+	.CustomLinkButton span {
+		background: url(../../Images/Buttons/linkbutton.png) no-repeat left top;
+		height: 26px;
+		line-height: 31px;
+		display: inline-block;
+		padding-left: 16px;
+		padding-bottom: 2px;
+		font-family: Arial,sans-serif;
+		color: #1d6db6;
+		font-size: 11pt;
+		font-weight: bold;
+		text-decoration: none;
+		/*width: 100%;*/
+	}
+
+a.CustomLinkButton:hover {
+	background-position: right -30px;
+	color: #1d6db6;
+	text-decoration: none;
+}
+
+	a.CustomLinkButton:hover span {
+		background-position: left -30px;
+		text-decoration: none;
+		color: #1d6db6;
+	}
+/*End ITGLinkButton*/
+
+/* Custom Label as link*/
+.CustomlabelAsLink {
+	cursor: pointer;
+	cursor: hand;
+	line-height: 26px;
+	height: 26px;
+	padding-right: 16px;
+	padding-bottom: 2px;
+	display: inline-block;
+	font-family: Arial,sans-serif;
+	color: #1d6db6;
+	font-size: 11pt;
+	font-weight: normal;
+	text-decoration: none;
+}
+/*End Custom Label*/
+
+/*Start Mastar Page Lable By Jehad*/
+.MasterUserName {
+	font-family: Arial,sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none; /*color: #333333;*/
+	color: #555555; /*Gray;*/
+	text-decoration: none; /*text-align: left; 	vertical-align: text-top;*/
+	vertical-align: text-top;
+}
+
+.PageTitle {
+	font-family: Arial,sans-serif, Arial, 'Times New Roman', 'Microsoft Sans Serif';
+	font-size: 13pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none; /*color: #333333;*/
+	text-align: left;
+	vertical-align: text-top;
+	color: #376098;
+	text-decoration: none;
+}
+
+.CopyRight {
+	font-family: Arial,sans-serif,arial;
+	font-size: 8pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #ffffff;
+}
+
+#LoadBackGround, #ConfirmBackGround, #MessageBoxBackGround, #UCConfirmBackGround {
+	display: none;
+	height: 10px;
+	width: 10px;
+	top: 0;
+	left: 0;
+	background-color: #086BAC;
+	border: 1px solid #086BAC;
+	z-index: 900;
+}
+
+#ConfirmBox, #MessageBox {
+	display: none;
+	background-color: #FFFFFF;
+	border: 2px solid #D1D1D1;
+	z-index: 1000;
+}
+
+#ConfirmTitle, #MessageBoxTitle {
+	background-image: url('../../Images/Menu/Bar.jpg');
+	width: 100%;
+	background-repeat: repeat-x;
+	font-size: larger;
+	padding-right: 3px;
+}
+
+.ConfirmXButton {
+	background-image: url('Bar.jpg');
+	background-repeat: repeat-x;
+}
+
+#Loading {
+	display: none;
+	vertical-align: middle;
+	width: 167px;
+	height: 167px;
+	z-index: 1000;
+}
+
+/* End Mastar Page Lable */
+
+
+.StandardFont {
+	font-family: Arial,sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none; /*color: #333333;*/
+	color: #555555; /*Gray;*/
+	text-decoration: none; /*text-align: left; 	vertical-align: text-top;*/
+}
+
+.TaskCount {
+	font-family: Arial,sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none; /*color: #333333;*/
+	color: #555555; /*Gray;*/
+	text-decoration: none; /*text-align: left; 	vertical-align: text-top;*/
+	padding-top: 2px;
+}
+
+.OperationResult {
+	font-family: Arial,sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none; /*color: #333333;*/
+	color: Red; /*Gray;*/
+	text-decoration: none; /*text-align: left; 	vertical-align: text-top;*/
+}
+
+	.OperationResult .MasterOperationResult {
+		font-family: Arial,sans-serif;
+		font-size: 11pt;
+		font-style: normal;
+		line-height: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none; /*color: #333333;*/
+		color: Red; /*Gray;*/
+		text-decoration: none; /*text-align: left; 	vertical-align: text-top;*/
+	}
+
+.ValidationsStyle {
+	font-family: Arial,sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none; /*color: #333333;*/
+	color: Red; /*Gray;*/
+	text-decoration: none; /*text-align: left; 	vertical-align: text-top;*/
+}
+
+.Colon {
+	width: 10px;
+	color: #555555;
+	font-family: Arial,sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	text-decoration: none;
+	text-transform: none;
+	text-align: center;
+}
+
+.ValidationStar {
+	text-align: center;
+	width: 10px;
+	font-family: Arial,sans-serif;
+	color: Red;
+	font-family: Arial,sans-serif;
+	font-size: 11pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	text-decoration: none;
+	text-transform: none;
+	padding-top: 6px;
+}
+
+
+/*A.Text
+{
+	font: 8.5pt 'Microsoft Sans Serif';
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #333333;
+}*/
+A:link {
+	font-size: 12px;
+	color: #2d478a; /*font-family: Arial, Helvetica, sans-serif;*/
+	font: bold 10pt Arial,sans-serif, 'Microsoft Sans Serif';
+	text-decoration: none;
+}
+
+A:active {
+	color: #666666;
+	text-decoration: none;
+	font: bold 10pt Arial,sans-serif, 'Microsoft Sans Serif';
+}
+
+A:visited {
+	color: #2A4486;
+	font: bold 10pt Arial,sans-serif, 'Microsoft Sans Serif';
+	text-decoration: none; /*FONT-FAMILY:Arial, Helvetica, sans-serif;*/ /*text-align:right;*/
+}
+
+A:hover {
+	color: #E77713;
+	font-size: 12px;
+	font: bold 10pt Arial,sans-serif, 'Microsoft Sans Serif';
+	text-decoration: none;
+}
+
+/* @Jmustafa  control take only english langauge*/
+#OnlyTextEnglish {
+	direction: ltr;
+	text-align: left;
+}
+
+/* @Jmustafa  Div Popup in Mastar page*/
+.divPopup {
+	min-width: 500px;
+	background-color: #F7FAFD;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	left: 0;
+	top: 0;
+	display: none;
+	position: fixed;
+	_position: absolute;
+	z-index: 1000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: #666 3px 3px 3px;
+	-moz-box-shadow: #666 3px 3px 3px;
+	box-shadow: #666 3px 3px 3px; /*behavior: url(../Scripts/PIE/PIE.htc);*/
+}
+
+.divPopupContent {
+	padding: 5px;
+}
+
+/*This is a fix for the telerik controls that do not scroll with the page*/
+.RadPanScrollFix {
+	position: relative;
+}
+
+.rpText {
+	font: bold 11pt Arial;
+	padding: 2px 10px !important;
+}
+
+.rspSlideTitle {
+	font: bold 11pt Arial !important;
+}
+
+.rspPaneTabText {
+	font: 10pt Arial !important;
+}
+
+.RadGrid_Vista, .RadGrid_Vista .rgMasterTable, .RadGrid_Vista .rgDetailTable, .RadGrid_Vista .rgGroupPanel table, .RadGrid_Vista .rgCommandRow table, .RadGrid_Vista .rgEditForm table, .RadGrid_Vista .rgPager table, .GridToolTip_Vista {
+	font: 10pt Arial !important;
+}
+
+	.RadGrid_Vista .rgPager .rgPagerButton {
+		font: 10pt Arial !important;
+	}
+
+	.RadGrid_Vista .rgRow a:hover, .RadGrid_Vista .rgAltRow a:hover, .RadGrid_Vista .rgEditRow a:hover, .RadGrid_Vista .rgFooter a:hover, .RadGrid_Vista .rgEditForm a:hover {
+		color: #E77713 !important;
+	}
+/* This is a fix for the telerik RadUpload in Popup (div have position relative | absolute)  */
+.ruStyled {
+	width: 230px !important;
+}
+
+.aspNetDisabled, .aspNetDisabled:hover, .aspNetDisabled a:hover, .aspNetDisabled A {
+	/*font: 8.5pt Tahoma, 'Microsoft Sans Serif';*/
+	text-decoration: none;
+	color: #555 !important;
+}
+
+.FormListUL {
+	list-style-type: none;
+	padding-right: 10px;
+}
+
+.FormList {
+	background-image: url(../../images/FormNextRTL.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 20px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+	text-align: right;
+}
+
+.RadGrid .rgFilter {
+	background: url(../../Images/WaveMRS_v2_filter_icon_option2.png) !important;
+}
+
+/* @Jmustafa  Tap Style*/
+
+.SelectedTab {
+	font-weight: bold !important;
+}
+
+.DisabledTab {
+	color: Silver !important;
+}
+
+.HoveredTab {
+	text-decoration: underline !important;
+}
+
+.rtsLink {
+	padding-left: 1px !important;
+}
+
+.rtsOut {
+	padding-right: 1px !important;
+}
+/* End Tap Style*/
+
+/*********************************************** Uploadify ********************************
+Uploadify
+Copyright (c) 2012 Reactive Apps, Ronnie Garcia
+Released under the MIT License <http://www.opensource.org/licenses/mit-license.php> 
+*/
+
+.uploadify {
+	position: relative;
+	margin-bottom: 1em;
+	background: url(../../Images/Buttons/linkbutton.png) no-repeat left top;
+	height: 26px;
+	line-height: 26px;
+	display: inline-block;
+	padding-left: 5px;
+	padding-bottom: 2px;
+	font-family: Tahoma;
+	color: #1d6db6;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.uploadify-button {
+	background: url(../../Images/Buttons/linkbutton.png) no-repeat right top;
+	color: #1d6db6;
+	font: normal 11px Tahoma;
+	text-align: center;
+	width: 100%;
+	height: 26px;
+	padding-top: 7px;
+}
+
+.uploadify:hover .uploadify-button {
+	background-position: right -30px;
+	color: #1d6db6;
+	text-decoration: none;
+}
+
+.uploadify-button.disabled {
+	background-color: #D0D0D0;
+	color: #808080;
+}
+
+.uploadify-queue {
+	margin-bottom: 1em;
+}
+
+.uploadify-queue-item {
+	background-color: #F5F5F5;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font: 11px Verdana, Geneva, sans-serif;
+	margin-top: 5px;
+	max-width: 350px;
+	padding: 10px; /*behavior: url(../Scripts/PIE/PIE.htc);*/
+}
+
+.uploadify-error {
+	background-color: #FDE5DD !important;
+}
+
+.uploadify-queue-item .cancel a {
+	background: url('../Images/Scripts/UpLoadify/uploadify-cancel.png') 0 0 no-repeat;
+	float: right;
+	height: 16px;
+	text-indent: -9999px;
+	width: 16px;
+}
+
+.uploadify-queue-item.completed {
+	background-color: #E5E5E5;
+}
+
+.uploadify-progress {
+	background-color: #E5E5E5;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.uploadify-progress-bar {
+	background-color: #0099FF;
+	height: 3px;
+	width: 1px;
+}
+/********************************************** Uploadify ********************************/
+
+
+/*Main Menu in  Master Page  */
+.RadPanelBar_Default {
+	overflow: hidden !important;
+}
+
+.ImageBorder {
+	background-color: #E6F1F5;
+	border: 1px solid #5E9DC8;
+	padding: 5px;
+	width: 70px;
+}
+
+.fileUploadClose {
+	margin-top: 10px;
+	width: 16px;
+	height: 16px;
+	float: left;
+}
+
+.fileUploadTable {
+	width: 120px;
+	padding: 0px 10px 0px 10px;
+	vertical-align: top;
+	float: left;
+}
+
+.fileUploadImage {
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	z-index: 1;
+	float: right;
+}
+
+.tableElement {
+	border: 1px solid #a6bfde;
+}
+
+	.tableElement td {
+		border-left: 1px solid #a6bfde;
+		text-align: center;
+		padding: 5px 10px 0px 10px;
+	}
+
+.thead {
+	background-color: #A6BFDE;
+}
+
+.AlphaNumericTextBox {
+	border-width: 1px;
+	border-style: solid;
+	padding: 2px 0px 3px;
+	vertical-align: middle;
+	border-color: #8E8E8E #B8B8B8 #B8B8B8 #8E8E8E;
+	background: white;
+	color: black;
+	font: 12px "segoe ui",arial,sans-serif;
+	/*padding-right: 5px;
+	padding-left: 5px;*/
+	margin: 0;
+	width: 100%;
+}
+
+.MemberAlphaNumericTextBox {
+	border-width: 1px;
+	border-style: solid;
+	padding: 2px 0px 2px;
+	vertical-align: middle;
+	border-color: #8E8E8E #B8B8B8 #B8B8B8 #8E8E8E;
+	background: white;
+	color: black;
+	font: 12px "segoe ui",arial,sans-serif;
+	margin: 0;
+	width: 98%;
+}
+
+.MandatoryColor {
+	border-width: 1px;
+	border-style: solid;
+	padding: 2px 0px 2px;
+	vertical-align: middle;
+	border-color: #8E8E8E #B8B8B8 #B8B8B8 #8E8E8E;
+	background: #CCCCCC;
+	color: black;
+	font: 12px "segoe ui",arial,sans-serif;
+	margin: 0;
+	width: 100%;
+}
+
+.LookUpMandatoryColor {
+	background: #CCCCCC;
+	color: black;
+	width: 200px;
+}
+
+.WarningColor {
+	border-width: 1px;
+	border-style: solid;
+	padding: 2px 0px 2px;
+	vertical-align: middle;
+	border-color: #8E8E8E #B8B8B8 #B8B8B8 #8E8E8E;
+	background: #FFCC66;
+	color: black;
+	font: 12px "segoe ui",arial,sans-serif;
+	margin: 0;
+	width: 100%;
+}
+
+/*Jmustafa NumericTextBox ITG_DatePicker Width*/
+.CSSNumericTextBox {
+	width: 100%;
+}
+
+.riTextBox {
+	/*width: 96% !important;*/
+}
+
+.ruBrowse {
+	cursor: pointer !important;
+	cursor: hand !important;
+	line-height: 31px !important;
+	height: 26px !important;
+	background: url(../../Images/Buttons/linkbuttonSelect.png) no-repeat right top !important;
+	padding-right: 16px !important;
+	padding-bottom: 2px !important;
+	display: inline-block !important;
+	font-family: Arial,sans-serif !important;
+	color: #1d6db6 !important;
+	font-size: 11pt !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+	margin-top: -2px;
+}
+
+.ruFileInput {
+	height: 20px !important;
+}
+
+.ruFileWrap {
+	height: 28px !important;
+}
+/* Open menu div */
+.rpSlide {
+	overflow: hidden !important;
+}
+
+.rgPager table {
+	direction: ltr;
+}
+
+/*Calander Current Date style*/
+.DatePickerCurrentDate a {
+	color: #ff0000 !important;
+	border-color: #ffb3b3 !important;
+	border-width: thin !important;
+	border-style: solid !important;
+}
+
+.Instructions {
+	font-size: 12px;
+	color: #e77713;
+	font-family: Tahoma;
+}
+
+/**************************** Div Validations Summary************************/
+#dvValidations {
+	display: none;
+	background: #FEEFB3 url(../../Images/Buttons/Warning.png) 10px 10px no-repeat;
+	border-style: solid;
+	border-left-width: 1px;
+	border-top-width: 1px;
+	border-color: #FFCCBA;
+	color: #D63301;
+	z-index: 1000;
+	position: fixed;
+	left: 20px;
+	top: 70px;
+	float: none;
+	clear: both;
+	padding: 15px;
+	padding-left: 50px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: #666 3px 3px 3px;
+	-moz-box-shadow: #666 3px 3px 3px;
+	box-shadow: #666 3px 3px 3px;
+}
+
+#dvCloseValidations {
+	margin-top: -10px;
+	margin-right: -10px;
+	cursor: pointer;
+	cursor: hand;
+	background-image: url(../../Images/Buttons/Close.png);
+	width: 16px;
+	height: 16px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.OperationResultSummary {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+	text-transform: none; /*color: #333333;*/
+	color: #F33; /*D63301; /*Gray;*/
+	text-decoration: none; /*text-align: left; 	vertical-align: text-top;*/
+}
+
+#dvGeneralValidationSummary {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+	text-transform: none; /*color: #333333;*/
+	color: #F33; /*#D63301; /*Gray;*/
+	text-decoration: none; /*text-align: left; 	vertical-align: text-top;*/
+}
+
+
+/**************************** Div Validations Summary***********************End*/
+
+
+
+#dvOperationResult {
+	background: #BDE5F8 url(../../Images/Buttons/Info.png) 10px 10px no-repeat;
+	border-style: solid;
+	border-left-width: 1px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-color: #00529B;
+	color: #00529B;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	display: inline-block;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: #666 3px 3px 3px;
+	-moz-box-shadow: #666 3px 3px 3px;
+	box-shadow: #666 3px 3px 3px;
+}
+
+#dvOperationResultContainer {
+	display: none;
+	float: none;
+	clear: both;
+	text-align: center;
+	z-index: 1000;
+	position: fixed;
+	bottom: 20px;
+	width: 100%;
+}
+
+/*.RadGrid .rgFilterRow input[type=text]
+{
+	width:100% !important;
+
+}
+.RadGrid .rgFilterRow 
+{
+	white-space:normal !important;
+}*/ 

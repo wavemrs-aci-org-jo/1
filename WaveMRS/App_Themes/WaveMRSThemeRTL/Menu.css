@@ -1,0 +1,95 @@
+.MenuLevel1Down {
+    background: #ebeef6 url('Menu/SideMenuArrowDown.png') no-repeat 5px 2px;
+    font-weight: bolder;
+    height: 16px;
+    padding: 3px 0 0;
+}
+
+.MenuLevel1Up {
+    background: #ebeef6 url('Menu/SideMenuArrowUp.png') no-repeat 5px 2px;
+    font-weight: bolder;
+    height: 16px;
+    padding: 3px 0 0;
+}
+
+    .MenuLevel1Standard a, .MenuLevel1Up a, .MenuLevel1Down a, .MenuLevel2Down a, .MenuLevel2Up a, .MenuLevel2Standard a, .MenuLevel3 a {
+        display: block;
+    }
+
+.MenuLevel1Standard {
+    background-color: #ebeef6;
+    font-weight: bolder;
+    height: 16px;
+    padding: 3px 0 0;
+}
+
+.MenuLevel2Down {
+    background: #e2e7f5 url('Menu/SideMenuArrowDown.png') no-repeat 5px 2px;
+    font-weight: bolder;
+    padding: 3px 5px 3px 0;
+    height: 16px;
+    border-bottom: 1px solid #b6c0dd;
+    border-top: 1px solid #fff;
+}
+
+.MenuLevel2Up {
+    background: #e2e7f5 url('Menu/SideMenuArrowUp.png') no-repeat 5px 2px;
+    font-weight: bolder;
+    padding: 3px 5px 3px 0;
+    height: 16px;
+    border-bottom: 1px solid #b6c0dd;
+    border-top: 1px solid #fff;
+}
+
+.MenuLevel2Standard {
+    background-color: #e2e7f5;
+    font-weight: bolder;
+    padding: 3px 5px 3px 0;
+    background-position: left;
+    height: 16px;
+    border-bottom: 1px solid #b6c0dd;
+    border-top: 1px solid #fff;
+}
+
+.MenuLevel3 {
+    background-color: #c7d0e8;
+    padding: 3px 10px 3px 0;
+    height: 16px;
+    border-bottom: 1px solid #a6b1d2;
+    border-top: 1px solid #fff;
+}
+
+#WaveMRSMenu A:link {
+    TEXT-DECORATION: none;
+    FONT-FAMILY: Arial,sans-serif;
+    FONT-SIZE: 16px;
+}
+
+#WaveMRSMenu A:active {
+    COLOR: #E77713;
+    TEXT-DECORATION: none;
+    FONT-FAMILY: Arial,sans-serif;
+    FONT-SIZE: 16px;
+}
+
+#WaveMRSMenu A:visited {
+    COLOR: #0065ce;
+    TEXT-DECORATION: none;
+    FONT-FAMILY: Arial,sans-serif;
+    FONT-SIZE: 16px;
+}
+
+#WaveMRSMenu A:hover {
+    COLOR: #E77713;
+    TEXT-DECORATION: underline;
+    FONT-FAMILY: Arial,sans-serif;
+    FONT-SIZE: 16px;
+}
+
+.SelectedLink {
+    color: white !important;
+}
+
+.ParentOfSelectedLink {
+    background-color: #527fb6;
+}
